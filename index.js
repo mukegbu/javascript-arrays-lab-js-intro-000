@@ -12,6 +12,11 @@ return kittens.pop()
 function destructivelyRemoveFirstKitten(){
 return kittens.shift()
 }
+
 function appendKitten(name){
-return kittens.push(name)
+  var newArray = kittens.slice();
+  // or ES6 way
+  // var newArray = [...kittens];
+  newArray.push(name)
+  return newArray
 }
