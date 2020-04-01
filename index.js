@@ -14,9 +14,7 @@ return kittens.shift()
 }
 
 function appendKitten(name){
-  var newArray = kittens.slice();
-  // or ES6 way
-  // var newArray = [...kittens];
+  var newArray = kittens;
   newArray.push(name)
   return newArray
 }
